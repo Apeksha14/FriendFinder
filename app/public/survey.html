@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang ="en"> 
+<head>
+    <meta charset="utf-8">
+    <title>Friend Finder</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css"  href="./css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="./css/normalize.min.css" >
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" >
+    <link rel="stylesheet" type="text/css" href="./css/animate.css" >
+    <link rel="stylesheet" type="text/css" href="./css/templatemo_misc.css" >
+    <link rel="stylesheet" type="text/css" href="./css/templatemo_style.css">
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+    <script type="text/javascript" src="./js/vendor/modernizr-2.6.2.min.js" security="none"></script>
+    <script type="text/javascript" src="./js/vendor/jquery-1.10.1.min.js"></script>
+    
+    <script type="text/javascript" src="./js/vendor/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript">window.jQuery || document.write('<script src="./js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+    <script type="text/javascript" src="./js/jquery.easing-1.3.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.js"></script>
+    <script type="text/javascript" src="./js/plugins.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+
+    <!-- templatemo 410 circle -->
+</head>
+<body>
+    <!--[if lt IE 7]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+    
+    <div class="bg-overlay"></div>
+
+    <div class="container-fluid">
+        <div class="row">
+            
+            <div class="col-md-4 col-sm-12">
+                <div class="sidebar-menu">
+                    
+                    <div class="logo-wrapper">
+                        <h1 class="logo">
+                            <h2 style="color:#D8AA46">FRIEND FINDER</h2>
+                            <img src="https://www.shimclinic.com/images/find-my-friends_icon175x175.jpeg">
+                            <p><i class="fa fa-facebook" style="font-size:36px;color:#D8AA46"></i><i class="fa fa-facebook" style="font-size:36px;color:#D8AA46"></i></p>
+
+                        </h1>
+                    </div> <!-- /.logo-wrapper -->
+                    <div class="menu-wrapper">
+                        <ul class="menu">
+                            
+                            <li><a href="/api/friends">API Friends List</a></li>
+                            <li><a href="https://github.com/Apeksha14/FriendFinder.git">GitHub Repo</a></li>
+                        </ul> <!-- /.menu -->
+                        <a href="/" class="toggle-menu"><i class="fa fa-bars"></i></a>
+                    </div> <!-- /.menu-wrapper -->
+
+                </div> <!-- /.sidebar-menu -->
+            </div> <!-- /.col-md-4 -->
+
+            <div class="col-md-8 col-sm-12">
+                        <div class="row">
+                            
+                            <div class="col-md-12 col-sm-12">
+                                <div class="toggle-content text-center" id="tab4">
+                                    
+                                    <h3 style="color:#D8AA46">About You.
+                                    </h3>
+                                    <p><span style="font-size: 15px;">Name (Required):  
+                                    <input type="text" name="" id="name" required ></span></p>
+                                    <p><span style="font-size: 15px;">Link to Photo Image (Required):   
+                                    <input type="text" name="" id="photo" required ></span></p>
+                                    <!--<a href="/survey"><button type="button" class="btn btn-warning">Take the survey</button><i class="fa fa-file-text" style="font-size:36px;"></i>-->
+                                          
+                                </div>
+                                <div class="toggle-content text-left" id="tab1">
+                                <h3 style="text-align:center;color:#D8AA46">Survey Questions</h3>
+                                <p style="font-size: 15px;">I make friends easily.
+                                <span style="float: right"><select data-placeholder="" class="chosen-select" id="q1">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                                </select></span></p>
+
+                                <p style="font-size: 15px;">I have a vivid imagination.
+                                <span style="float: right"><select data-placeholder="" class="chosen-select" id="q2">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                                </select></span></p>
+
+                                <p style="font-size: 15px;">I worry about things.
+                                <span style="float: right"><select data-placeholder="" class="chosen-select" id="q3">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                                </select></span></p>
+
+                                <p style="font-size: 15px;">I love large parties.
+                                <span style="float: right"><select data-placeholder="" class="chosen-select" id="q4">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                                </select></span></p>
+
+                                <p style="font-size: 15px;">I believe in the importance of art.
+                                <span style="float: right"><select data-placeholder="" class="chosen-select" id="q5">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                                </select></span></p>
+
+                                <p style="font-size: 15px;">I get angry easily. 
+                                <span style="float: right"><select data-placeholder="" class="chosen-select" id="q6">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                                </select></span></p>
+
+                                <p style="font-size: 15px;">I take charge.
+                                <span style="float: right"><select data-placeholder="" class="chosen-select" id="q7">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                                </select></span></p>
+
+                                <p style="font-size: 15px;">I experience my emotions intensely.
+                                <span style="float: right"><select data-placeholder="" class="chosen-select" id="q8">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                                </select></span></p>
+
+                                <p style="font-size: 15px;">I am easily intimidated.
+                                <span style="float: right"><select data-placeholder="" class="chosen-select" id="q9">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                                </select></span></p>
+
+                                <p style="font-size: 15px;">I often feel blue.
+                                <span style="float: right"><select data-placeholder="" class="chosen-select" id="q10">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                                </select></span></p>
+                                    
+
+                                <div class="toggle-content text-center"><button type="button" class="btn btn-warning" id="submit"><i class="fa fa-heart" aria-hidden="true"></i>Submit</button></div>
+                                
+                                </div>
+                                
+                            </div>
+
+                        </div>
+            </div>
+        </div>
+    </div>
+    <div id="resultsModal" class="modal fade" role="dialog" >
+      <div class="modal-dialog" >
+
+        <!-- Modal content-->
+        <div class="modal-content" style="background-color:#D8AA46">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title"><strong>Best Match</strong></h2>
+          </div>
+          <div class="modal-body">
+            <h2 id="matchName"></h2>
+            <img id="matchImg" src="" alt="" style="height:350px;width:350px;">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+    <div class="container-fluid">   
+        <div class="row">
+            <div class="col-md-12 footer">
+                <p id="footer-text">
+                
+                    Copyright &copy; Apeksha Hakim 2017 <a href="#">Friend Finder</a>
+                 
+                 </p>
+            </div><!-- /.footer --> 
+        </div>
+    </div> <!-- /.container-fluid -->
+    
+    <script type="text/javascript">
+            jQuery(function ($) {
+
+                $.supersized({
+
+                    // Functionality
+                    slide_interval: 3000, // Length between transitions
+                    transition: 1, // 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+                    transition_speed: 700, // Speed of transition
+
+                    // Components                           
+                    slide_links: 'blank', // Individual links for each slide (Options: false, 'num', 'name', 'blank')
+                    slides: [ // Slideshow Images
+                        {
+                            image: 'images/templatemo-slide-1.jpg'
+                        }, {
+                            image: 'images/templatemo-slide-2.jpg'
+                        }, {
+                            image: 'images/templatemo-slide-3.jpg'
+                        }, {
+                            image: 'images/templatemo-slide-4.jpg'
+                        }
+                    ]
+
+                });
+            }); 
+$('a.toggle-menu').click(function(){
+                $(".menu").slideToggle(400);
+                return false;
+            });
+            $(".menu a.homebutton").click(function(){
+        $(".menu").slideUp();
+    });
+            $(".menu a").click(function(){
+        var id =  $(this).attr('class');
+        id = id.split('-');
+        $("#menu-container .content").hide();
+        $("#menu-container #menu-"+id[1]).addClass("animated fadeInDown").show();
+        return false;
+    });
+
+    </script>
+    
+        <!-- Google Map -->
+        <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+        <script src="js/vendor/jquery.gmap3.min.js"></script>
+        <!-- Google Map Init-->
+        <script type="text/javascript">
+           function templatemo_map() {
+                $('.google-map').gmap3({
+                    marker:{
+                        address: '16.8496189,96.1288854' 
+                    },
+                        map:{
+                        options:{
+                        zoom: 15,
+                        scrollwheel: false,
+                        streetViewControl : true
+                        }
+                    }
+                });
+            }
+        </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+        <script type="text/javascript">
+
+    var config = {
+      '.chosen-select'           : {},
+      '.chosen-select-deselect'  : {allow_single_deselect:true},
+      '.chosen-select-no-single' : {disable_search_threshold:10},
+      '.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
+      '.chosen-select-width'     : {width:"95%"}
+    }
+    for (var selector in config) {
+      $(selector).chosen(config[selector]);
+    }
+
+    // Capture the form inputs 
+    $("#submit").on("click", function(){
+
+        // Form validation
+        function validateForm() {
+          var isValid = true;
+          $('.form-control').each(function() {
+            if ( $(this).val() === '' )
+                isValid = false;
+          });
+
+          $('.chosen-select').each(function() {
+
+            if( $(this).val() === "")
+                isValid = false
+          })
+          return isValid;
+        }
+
+        // If all required fields are filled
+        if (validateForm() == true)
+        {
+            // Create an object for the user's data
+            var userData = {
+                name: $("#name").val(),
+                photo: $("#photo").val(),
+                scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()]
+            }
+
+
+            // Grab the URL of the website
+            var currentURL = window.location.origin;
+
+            // AJAX post the data to the friends API. 
+            $.post("/api/friends", userData, function(data){
+
+                // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+                $("#matchName").text(data.name);
+                $('#matchImg').attr("src", data.photo);
+
+                // Show the modal with the best match 
+                $("#resultsModal").modal('toggle');
+
+            });
+        }
+        else
+        {
+            alert("Please fill out all fields before submitting!");
+        }
+        
+        return false;
+    });
+
+     </script>
+        
+</body>
+</html>

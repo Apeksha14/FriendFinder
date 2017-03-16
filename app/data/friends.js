@@ -1,0 +1,164 @@
+// ALL USERS DATA
+var friends = [
+  {
+      "name":"Iron Man",
+      "photo":"https://s-media-cache-ak0.pinimg.com/736x/2c/bb/04/2cbb04e7ef9266e1e57a9b0e75bc555f.jpg",
+      "scores":[
+         5,
+         1,
+         4,
+         4,
+         5,
+         1,
+         2,
+         5,
+         4,
+         1
+          ]
+      },
+  {
+  "name":"Scarlet Witch",
+  "photo":"http://cdn.playbuzz.com/cdn/979c30ee-decf-474c-99fd-264e11477ff7/0d527157-ce36-4add-a29e-172c63c71a6e.jpeg",
+  "scores":[
+     1,
+     5,
+     1,
+     2,
+     1,
+     5,
+     3,
+     1,
+     4,
+     5
+      ]
+},
+{
+  "name":"Superman",
+  "photo":"http://screenrant0.imgix.net/wp-content/uploads/Man-of-Steel-Trivia-Easter-Egg-List.jpg?auto=format&lossless=1&q=90&w=700&h=350&fit=crop",
+  "scores":[
+     1,
+     5,
+     2,
+     1,
+     3,
+     5,
+     2,
+     1,
+     1,
+     5
+      ]
+},
+{
+  "name":"Black Widow",
+  "photo":"https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/01/14/12/black-widow-avengers-ultron.jpg",
+  "scores":[
+     1,
+     2,
+     1,
+     1,
+     1,
+     5,
+     3,
+     1,
+     1,
+     4
+      ]
+},
+{
+  "name":"Spiderman",
+  "photo":"https://upload.wikimedia.org/wikipedia/en/f/fe/Tom_Holland_in_Spider-Man_Homecoming.jpg",
+  "scores":[
+    1,
+     5,
+     1,
+     3,
+     1,
+     4,
+     5,
+     2,
+     1,
+     5
+      ]
+},
+{
+  "name":"Wonder Woman",
+  "photo":"https://cnet4.cbsistatic.com/img/5SdtA9dV3jLTHJ5mGGweaI0Pm2s=/770x433/2016/07/16/69a827cf-ba37-4fd4-ae9c-ffe534c9bc22/wonderwoman.jpg",
+  "scores":[
+     2,
+     5,
+     1,
+     3,
+     4,
+     5,
+     5,
+     2,
+     1,
+     5
+      ]
+},
+{
+  "name":"Batman",
+  "photo":"http://kingofwallpapers.com/batman-dark-knight/batman-dark-knight-003.jpg",
+  "scores":[
+     2,
+     5,
+     4,
+     1,
+     3,
+     5,
+     2,
+     1,
+     1,
+     2
+      ]
+},
+{
+  "name":"Jessica Jones",
+  "photo":"http://digitalspyuk.cdnds.net/15/51/1280x640/landscape-1450520651-ustv-jessica-jones-finale.png",
+  "scores":[
+     1,
+     5,
+     1,
+     3,
+     1,
+     5,
+     4,
+     1,
+     1,
+     2
+      ]
+},
+{
+  "name":"Deadpool",
+  "photo":"http://media.salemwebnetwork.com/cms/CW/entertainment/movies_tv/30147-Deadpool.1200w.tn.jpg",
+  "scores":[
+     1,
+     5,
+     1,
+     2,
+     3,
+     5,
+     5,
+     4,
+     1,
+     5
+      ]
+},
+{
+  "name":"Supergirl",
+  "photo":"http://assets1.ignimgs.com/thumbs/userUploaded/2015/5/17/supergirl_051315_1280-1431904950540_1280w.jpg",
+  "scores":[
+     2,
+     5,
+     1,
+     3,
+     1,
+     4,
+     5,
+     1,
+     1,
+     4
+      ]
+}
+]
+module.exports = friends;
